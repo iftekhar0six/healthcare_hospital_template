@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root[data-theme='light'] {
+  --color-primary: #0066cc;
+  --color-primary-dark: #0052a3;
+  --color-primary-light: #338fdd;
+  --color-secondary: #00a86b;
+  --color-secondary-dark: #008556;
+  --color-secondary-light: #33ba88;
+  --color-accent: #ff6b35;
+  --color-accent-dark: #e55a2b;
+  --color-accent-light: #ff8558;
+  --color-background: #ffffff;
+  --color-background-alt: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e9ecef;
+  --color-text: #212529;
+  --color-text-secondary: #6c757d;
+  --color-text-light: #adb5bd;
+  --color-border: #dee2e6;
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-info: #17a2b8;
+}
+
+:root[data-theme='dark'] {
+  --color-primary: #4da3ff;
+  --color-primary-dark: #338fdd;
+  --color-primary-light: #66b3ff;
+  --color-secondary: #33d99a;
+  --color-secondary-dark: #00cc7a;
+  --color-secondary-light: #5ce0ad;
+  --color-accent: #ff8a65;
+  --color-accent-dark: #ff7043;
+  --color-accent-light: #ffab91;
+  --color-background: #121212;
+  --color-background-alt: #1e1e1e;
+  --color-surface: #1e1e1e;
+  --color-surface-alt: #2d2d2d;
+  --color-text: #ffffff;
+  --color-text-secondary: #b0b0b0;
+  --color-text-light: #808080;
+  --color-border: #404040;
+  --color-success: #4caf50;
+  --color-warning: #ffb300;
+  --color-error: #f44336;
+  --color-info: #29b6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}

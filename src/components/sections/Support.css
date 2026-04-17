@@ -1,0 +1,162 @@
+.support-section {
+  background: var(--color-background-alt);
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.support-description {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+.support-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.support-image-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 2rem;
+}
+
+.support-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.support-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.support-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.support-types {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.support-type {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--color-background-alt);
+  border-radius: 0.5rem;
+}
+
+.support-type-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.support-type-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.support-type-description {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.support-bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.support-bank-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--color-background-alt);
+  border-radius: 0.5rem;
+}
+
+.support-bank-label {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.support-bank-value {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.support-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.support-method {
+  padding: 1rem;
+  background: var(--color-background-alt);
+  border-radius: 0.5rem;
+}
+
+.support-method-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.support-method-details {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.support-tax-info {
+  padding: 1.5rem;
+  background: var(--color-secondary);
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .support-content {
+    grid-template-columns: 1fr;
+  }
+
+  .support-image-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  .support-bank-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

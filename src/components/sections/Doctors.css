@@ -1,0 +1,193 @@
+.doctors-section {
+  background: var(--color-background-alt);
+}
+
+.doctors-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doctors-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.doctors-tab {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--color-text);
+}
+
+.doctors-tab:hover {
+  border-color: var(--color-primary);
+}
+
+.doctors-tab--active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.doctors-category-info {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.doctors-category-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.doctors-category-description {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.doctor-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.doctor-image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: var(--color-surface-alt);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover .doctor-image {
+  transform: scale(1.1);
+}
+
+.doctor-info {
+  padding: 1.5rem;
+}
+
+.doctor-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.doctor-specialty {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.doctor-qualification {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.doctor-experience {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.doctor-availability {
+  padding: 0.75rem;
+  background: var(--color-background-alt);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.department-card {
+  padding: 2rem;
+}
+
+.department-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.department-doctors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.department-doctor {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.department-doctor::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.department-availability {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  padding: 0.75rem;
+  background: var(--color-background-alt);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctors-tabs {
+    flex-direction: column;
+  }
+
+  .doctors-tab {
+    width: 100%;
+  }
+}

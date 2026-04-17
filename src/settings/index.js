@@ -1,0 +1,12 @@
+export { siteInfo } from './siteInfo';
+export { heroContent } from './heroContent';
+export { aboutContent } from './aboutContent';
+export { trustContent } from './trustContent';
+export { facilitiesContent } from './facilitiesContent';
+export { doctorsContent } from './doctorsContent';
+export { activitiesContent } from './activitiesContent';
+export { appointmentContent } from './appointmentContent';
+export { galleryContent } from './galleryContent';
+export { supportContent } from './supportContent';
+export { contactContent } from './contactContent';
+export { footerContent } from './footerContent';
